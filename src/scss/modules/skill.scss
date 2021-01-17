@@ -1,0 +1,12 @@
+.skills {
+    background-color: #e5fcf5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    &-container {
+        width: 1000px;
+        &__title {
+            text-align: center;
+        }
+    }
+}

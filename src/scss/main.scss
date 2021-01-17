@@ -1,13 +1,16 @@
-@import "~normalize.css";
+@import '~normalize.css';
 
-@import "_variables";
-@import "modules/hello.scss";
+@import '_variables';
+@import 'modules/header';
+@import 'modules/about';
+@import 'modules/footer';
+@import 'modules/skill';
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+    background: $background;
+    color: $fontColor;
+}
+
+h2 {
+    margin: 0px;
 }

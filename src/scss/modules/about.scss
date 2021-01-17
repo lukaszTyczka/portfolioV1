@@ -1,0 +1,12 @@
+.about {
+    background-color: #efa00b;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    &__summary {
+        max-width: 1000px;
+        &--title {
+            text-align: center;
+        }
+    }
+}
