@@ -13,6 +13,14 @@
         justify-content: center;
         height: 100%;
     }
+    &__img {
+        @media (max-width: 526px) {
+            width: 250px;
+        }
+        &__title {
+            text-align: center;
+        }
+    }
 }
 
 .dupa {
