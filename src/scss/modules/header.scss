@@ -1,6 +1,5 @@
 .header {
-    background-color: #8f8a8a;
-    color: azure;
+    color: $fontColor;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,18 +13,29 @@
     }
     &__container {
         display: flex;
-        flex-flow: column;
         align-items: center;
         justify-content: center;
         height: 100%;
+        width: 100%;
     }
     &__img {
         @media (max-width: 526px) {
             width: 250px;
         }
-        &__title {
-            text-align: center;
+    }
+    &__title {
+        font-size: 72px;
+        width: 700px;
+        padding-left: 100px;
+        margin-bottom: 2px;
+        &--container {
+            height: 385px;
         }
+    }
+    &__subtitle {
+        margin-top: 3px;
+        padding-left: 300px;
+        font-size: 36px;
     }
 }
 
