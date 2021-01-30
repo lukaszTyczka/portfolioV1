@@ -1,9 +1,18 @@
 import '../scss/main.scss';
 
-// uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
-
-/* place your code below */
-
-console.log('HELLO 🚀')
+var projectsList = document.querySelector('.projects__list--js');
+console.log(projectsList);
+fetch('https://api.github.com/users/lukaszTyczka/repos')
+    .then((resp) => {
+        return resp.json();
+    })
+    .then((resp) => {
+        resp.forEach((project) => {
+            projectsList.innerHTML += `<li>
+                <a href=${project.html_url}>${project.name}</a>
+            </li>`;
+        });
+    })
+    .catch((e) => {
+        console.log(e);
+    });
